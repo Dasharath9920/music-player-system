@@ -1,0 +1,50 @@
+.login {
+  width: 85%;
+  height: 670px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgb(34, 30, 75);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-logo {
+  margin: 40px;
+  font-size: 5rem;
+}
+
+.login-logo span {
+  color: rgb(243, 0, 81);
+}
+
+.login__image {
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  right: 0;
+  top: 0;
+  object-fit: cover;
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  filter: brightness(50%);
+}
+
+.login > a {
+  font-size: 1.1rem;
+  border-radius: 999px;
+  width: 200px;
+  border: 2px solid white;
+  padding: 10px 30px;
+  background-color: black;
+  margin-top: 10%;
+  margin-left: 10%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login a:hover {
+  border-color: rgb(30 215 96);
+}

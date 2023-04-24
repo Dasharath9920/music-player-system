@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  width: 85%;
+  height: 670px;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white;
+  transition: 0.2s ease all;
+  background: linear-gradient(
+    to bottom right,
+    rgb(11, 16, 41),
+    rgb(76, 92, 170)
+  );
+}
+
+.header {
+  width: 100%;
+  height: 86%;
+  display: flex;
+  position: relative;
+}
+
+.footer {
+  height: 14%;
+  background-color: rgb(19, 25, 43);
+  width: 100%;
+  padding: 0px 30px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.song__cover {
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  position: absolute;
+  right: 0;
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body {
+  flex: 8.5;
+  width: 100%;
+  display: flex;
+  color: rgb(194, 194, 194);
+}
+
+.album-left {
+  flex: 0.6;
+  padding: 40px 30px;
+}
+
+.album-right {
+  flex: 0.4;
+  overflow-x: scroll;
+  padding: 40px 30px;
+}
+
+.search-bar {
+  display: flex;
+  color: rgb(220, 220, 220);
+}
+
+.search-bar > input {
+  width: 50%;
+  margin-right: 10px;
+  padding: 4px;
+  border: none;
+  border-bottom: 0.1px solid rgb(112, 112, 112);
+  background-color: transparent;
+  outline: none;
+  color: rgb(220, 220, 220);
 }

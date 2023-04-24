@@ -1,0 +1,52 @@
+.controls {
+  height: 100%;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(209, 209, 209);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+  flex: 0.2;
+}
+
+.footer-left {
+  justify-content: flex-start;
+}
+
+.play__controls {
+  flex: 0.5;
+  flex-direction: column;
+}
+
+.controls button {
+  margin: 0px 5px;
+  color: rgb(209, 209, 209);
+}
+
+.controls button:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+.play-btn {
+  font-size: 40px !important;
+}
+
+.footer-left__info {
+  margin-left: 10px;
+}
+
+.footer-left__info > p {
+  font-size: 0.7rem;
+  margin-top: 3px;
+  color: rgb(179, 179, 179);
+}

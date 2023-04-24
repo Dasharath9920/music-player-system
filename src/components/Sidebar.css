@@ -1,0 +1,37 @@
+.sidebar {
+  flex: 0.15;
+  background-color: #161c49;
+}
+
+.sidebar__logo {
+  margin: 25px 30px;
+}
+
+.sidebar__logo > span {
+  color: rgb(243, 0, 81);
+}
+
+.sidebar__header {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin: 30px 25px 10px 30px;
+  color: rgb(243, 0, 81);
+}
+
+.sidebar-row {
+  display: flex;
+  align-items: center;
+  color: rgb(214, 214, 214);
+  font-size: 14px;
+  padding: 12px 30px;
+}
+
+.sidebar-row > p {
+  margin-left: 8px;
+}
+
+.sidebar-row:hover {
+  color: white;
+  cursor: pointer;
+  transform: scale(1.05);
+}
